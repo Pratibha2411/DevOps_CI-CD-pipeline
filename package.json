@@ -1,0 +1,19 @@
+{
+  "name": "cicd-pipeline",
+  "version": "1.0.0",
+  "description": "Continous integration, delievry and deployement: Docker, Docker Hub, Jenkins, GitHub",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pratibha2411/DevOps_CI-CD-pipeline.git"
+  },
+  "author": "Pratibha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pratibha2411/DevOps_CI-CD-pipeline/issues"
+  },
+  "homepage": "https://github.com/Pratibha2411/DevOps_CI-CD-pipeline#readme"
+}
