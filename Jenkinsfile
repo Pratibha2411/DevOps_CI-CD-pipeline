@@ -20,6 +20,10 @@ node {
 	
 	}
 	}
+	stage("Checkout"){
+	steps{
+	git branch: BRANCH_NAME,credentialsId: CREDENTIALS_ID, url: REPOSITORY_URL }
+	}
 	stage('push image'){
 	
 	docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials'){
