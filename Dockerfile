@@ -1,10 +1,10 @@
-# use a node base image
-FROM node:7-onbuild 
+# From base image node
+FROM node:16
 
-# setting a health check
-HEALTHCHECK --interval=7s \
-	    --timeout=7s \
-	    CMD curl -f http://127.0.0.1:8000 || exit 1
+RUN apt-get update
 
-# telling docker what port to expose
-EXPOSE 8000	    	
+
+CMD ["echo","Hello, this is my 1st docker image"]
+
+# tell docker waht port to expose
+EXPOSE 8000
